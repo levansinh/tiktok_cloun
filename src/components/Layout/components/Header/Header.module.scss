@@ -1,0 +1,84 @@
+.wrapper {
+    padding: 0 16px;
+    height: 60px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .heading-title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(22, 24, 35, 0.75);
+        padding: 5px px 12px 3px;
+    }
+    .inner {
+        width: 1150px;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            height: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .search,
+        .search-result {
+            width: 415px;
+        }
+        .search {
+            display: flex;
+            position: relative;
+            width: 415px;
+            height: 46px;
+            background: rgba(22, 24, 35, 0.06);
+            border-radius: 92px;
+            align-items: center;
+            border: 1.5px solid transparent;
+            input {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                border: none;
+                background: transparent;
+                outline: none;
+                padding: 0 16px;
+                width: 346px;
+                color: rgba(22, 24, 35, 1);
+            }
+            input:not(:placeholder-shown) ~ .search-btn {
+                color: #39393b;
+            }
+            .search-btn {
+                width: 52px;
+                font-size: 20px;
+                border-left: 1px solid rgba(22, 24, 35, 0.06);
+                height: 100%;
+                border-top-right-radius: 92px;
+                border-bottom-right-radius: 92px;
+                color: #a7a7ab;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(22, 24, 35, 0.02);
+                }
+                &:active {
+                    cursor: pointer;
+                    background-color: rgba(22, 24, 35, 0.06);
+                }
+            }
+            &:focus-within {
+                border-color: rgba(42, 44, 59, 0.2);
+            }
+
+            .clear,
+            .loading {
+                position: absolute;
+                right: 68px;
+                color: #a7a7ab;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.info {
+}
+.wrapper {
+    display: flex;
+    border-radius: 4px;
+    padding: 8px;
+    align-items: center;
+    position: relative;
+    .avatar {
+        margin-right: 12px;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    .name {
+        span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: -2px;
+            max-width: 260px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-right: 5px;
+        }
+        .check {
+            color: rgb(32, 213, 236);
+        }
+    }
+    .username {
+        color: rgba(22, 24, 35, 0.75);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 260px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
